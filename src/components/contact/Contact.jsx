@@ -10,9 +10,9 @@ export default function contact() {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineEmail />
+            <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>mohammadrezamf2014@gmail.com</h5>
+            <h5 className="email-url">mohammadrezamf2014@gmail.com</h5>
             <a
               href="mailito:dummyegator@email.com"
               target="_blank"
@@ -22,9 +22,9 @@ export default function contact() {
             </a>
           </article>
           <article className="contact__option">
-            <MdOutlineEmail />
+            <MdOutlineEmail className="contact__option-icon" />
             <h4>messenger</h4>
-            <h5>mohammadrezamf2014@gmail.com</h5>
+            <h5>google.com</h5>
             <a
               href="mailito:dummyegator@email.com"
               target="_blank"
@@ -34,7 +34,7 @@ export default function contact() {
             </a>
           </article>
           <article className="contact__option">
-            <MdOutlineEmail />
+            <MdOutlineEmail className="contact__option-icon" />
             <h4>whatsApp</h4>
             <h5>+9375332212</h5>
             <a
@@ -47,7 +47,24 @@ export default function contact() {
           </article>
         </div>
         {/* End of  contact option */}
-        <form action=""></form>
+        <form action="">
+          <input
+            type="text"
+            name="name"
+            placeholder="Year Full Name"
+            required
+          />
+          <input type="text" name="email" placeholder="your Email" required />
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   );

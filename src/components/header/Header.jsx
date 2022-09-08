@@ -8,9 +8,9 @@ export default function Header() {
   return (
     <header>
       <div className="container header__container ">
-        <h5>Hellon I'm</h5>
-        <h1>MohammadReza Abari</h1>
-        <h5 className="text-light">Fullstack Developer</h5>
+        <h5>Hello I'm</h5>
+        <h1>Sofia</h1>
+        <h5 className="text-light">Front-End Developer</h5>
         <CTA />
         <HeaderSocials />
         <div className="me">
